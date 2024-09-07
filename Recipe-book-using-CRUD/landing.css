@@ -1,0 +1,881 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #F5EFE6;
+}
+
+header{
+    width: 100%;
+    height: 125px;
+    background-color: #C9DABF;
+}
+
+header .box{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    padding: 35px 100px 35px 100px;
+}
+
+header .logo{
+    font-size: 48px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+}
+
+header .logo:hover{
+    color: #517801;
+}
+
+header .create{
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+header .create-button{
+    background-color: #517801;
+    width: 150px;
+    height: 50px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #F5EFE6;
+    font-weight: 500;
+}
+
+header .create-button:hover{
+    color: #517801;
+    background-color: #F5EFE6;
+}
+
+section{
+    display: flex;
+    padding: 120px 125px 120px 125px;
+}
+
+section .hero{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+section .content h1{
+    font-size: 70px;
+    font-weight: 400;
+}
+
+section .content p{
+    font-size: 35px;
+    font-weight: 400;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+section .create{
+    background-color: #517801;
+    width: 200px;
+    height: 75px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+section .create-button{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #F5EFE6;
+    font-weight: 500;
+}
+
+section .create-button:hover{
+    color: #517801;
+    background-color: #C9DABF;
+}
+
+section .image{
+    width: 430px;
+    height: 420px;
+}
+
+section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 55px;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 130px 125px 130px 125px;
+}
+
+.recipe-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.recipe-item {
+    width: auto;
+    max-width: 550px;
+    height: auto;
+    max-height: 300px;
+    background-color: #517801;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.recipe-item h2 {
+    margin: 0 0 10px;
+    color: #F5EFE6;
+    font-size: 30px;
+    font-weight: 400;
+    max-width: 300px;
+    height: 100px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.recipe-item h2::-webkit-scrollbar {
+    display: none;
+}
+
+
+.recipe-item .time{
+    color: #F5EFE6;
+    font-size: 14px;
+    font-weight: 100;
+    padding: 0 0 10px 10px;
+}
+
+.recipe-item .des{
+    font-size: 18px;
+    font-weight: 200;
+    color: #F5EFE6;
+    width: 450px;
+    height: 200px;
+    margin: 0 30px 30px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    list-style-type: none;
+}
+
+.recipe-item .des::-webkit-scrollbar {
+    width: 0;
+}
+
+.recipe-item .des:hover::-webkit-scrollbar {
+    width: 3px;
+}
+
+.recipe-item .des:hover::-webkit-scrollbar-thumb {
+    background-color: #C9DABF;
+    border-radius: 50px;
+}
+
+.recipe-item .des:hover::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.see-more{
+    background-color: lightgray;
+    width: 70px;
+    height: 60px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.see-more button {
+    font-size: 10px;
+    font-weight: 100;
+    color: #517801;
+    background-color: transparent;
+    border: none;
+}
+
+.see-more:hover {
+    color: #517801;
+    background-color: #F5EFE6;
+    opacity: 1;
+}
+
+footer{
+    width: 100%;
+    height: 135px;
+    background-color: #C9DABF;
+    margin: 0;
+    padding: 0;
+}
+
+footer .container{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .container h1{
+    font-weight: 400;
+}
+
+.recipe-overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    color: #fff;
+    text-align: center;
+}
+
+.overlay-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    background-color: #517801;
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.overlay-content .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px 20px 30px;
+}
+
+.overlay-content .upper{
+    max-width: 100%;
+    padding: 0 15px;
+}   
+
+.overlay-content .head h1{
+    font-size: 48px;
+    font-weight: 200;
+    text-align: start;
+    padding: 0 0 0 15px;
+    max-width: 400px;
+    height: 55px;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    overflow-x: scroll; 
+}
+
+.overlay-content .head h1::-webkit-scrollbar {
+    display: none;
+}
+
+.overlay-content .head p{
+    font-size: 16px;
+    font-weight: 100;
+    text-align: start;
+    padding: 0 0 0 15px;
+}
+
+.overlay-content .head .icons{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-content .head .icons button{
+    background-color: transparent;
+    border: none;
+    color: #C9DABF;
+    cursor: pointer;
+} 
+
+.overlay-content .head .line{
+    background-color: #C9DABF;
+    height: 40px;
+    border-radius: 50px;
+    color: #C9DABF;
+}
+
+.overlay-content .hero{
+    display: flex;
+    margin: 5px 30px 30px 30px ;
+}
+
+.overlay-content .hero .des{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 18px;
+    font-weight: 200;
+    color: #F5EFE6;
+    width: auto;
+    max-width: 60%;
+    height: auto;
+    max-height: 200px;
+    text-align: start;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.overlay-content .hero .des::-webkit-scrollbar {
+    width: 0;
+}
+
+.overlay-content .hero .des:hover::-webkit-scrollbar {
+    width: 3px;
+}
+
+.overlay-content .hero .des:hover::-webkit-scrollbar-thumb {
+    background-color: #C9DABF;
+    border-radius: 50px;
+}
+
+.overlay-content .hero .des:hover::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.overlay-content .hero .ing {
+    font-size: 18px;
+    font-weight: 200;
+    color: #F5EFE6;
+    width: auto;
+    max-width: 60%;
+    height: auto;
+    max-height: 200px;
+    padding: 0px 50px;
+    text-align: start;
+    overflow-y: auto;
+    overflow-x: hidden;
+    list-style-type: none;
+}
+
+.overlay-content .hero .ing::-webkit-scrollbar {
+    width: 0;
+}
+
+.overlay-content .hero .ing:hover::-webkit-scrollbar {
+    width: 3px;
+}
+
+.overlay-content .hero .ing:hover::-webkit-scrollbar-thumb {
+    background-color: #C9DABF;
+    border-radius: 50px;
+}
+
+.overlay-content .hero .ing:hover::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.overlay-content .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-content .dir {
+    font-size: 18px;
+    font-weight: 200;
+    color: #F5EFE6;
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    padding: 0px 50px;
+    text-align: start;
+    justify-content: flex-start;
+    overflow-y: auto;
+    overflow-x: hidden;
+    list-style-type: none;
+}
+
+.overlay-content .dir::-webkit-scrollbar {
+    width: 0;
+}
+
+.overlay-content .dir:hover::-webkit-scrollbar {
+    width: 3px;
+}
+
+.overlay-content .dir:hover::-webkit-scrollbar-thumb {
+    background-color: #C9DABF;
+    border-radius: 50px;
+}
+
+.overlay-content .dir:hover::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.update-overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    color: #fff;
+    text-align: center;
+}
+
+.update-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    background-color: #C9DABF;
+    max-width: 70%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.update-content .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px 20px 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.update-content .head h1{
+    font-size: 48px;
+    font-weight: 200;
+    color: #517801;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+}
+
+.hero form{
+    padding-left: 0 50px 0 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+}
+
+.hero .name{
+    font-size: 20px;
+    font-weight: 100;
+    border: none;
+    border-radius: 20px;
+    max-height: 35px;
+    padding: 20px;
+    outline: none;
+}
+
+.hero .time{
+    font-size: 16px;
+    font-weight: 100;
+    border: none;
+    border-radius: 20px;
+    width: 30%;
+    padding: 0 20px 0 20px;
+    outline: none;
+}
+
+.hero textarea{
+    resize: none;
+}
+
+.hero .des{
+    font-size: 20px;
+    font-weight: 100;
+    border: none;
+    border-radius: 20px;
+    height: 140px;
+    max-height: 100%;
+    padding: 20px;
+    outline: none;
+    text-align: start;
+    overflow-y: auto;
+    overflow-x: hidden;
+    list-style-type: none;
+}
+
+.hero .des::-webkit-scrollbar {
+    width: 0;
+}
+
+.hero .des:hover::-webkit-scrollbar {
+    width: 3px;
+}
+
+.hero .des:hover::-webkit-scrollbar-thumb {
+    background-color: #517801;
+    border-radius: 50px;
+}
+
+.hero .des:hover::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+
+.hero .ing{
+    font-size: 20px;
+    font-weight: 100;
+    border: none;
+    border-radius: 20px;
+    height: 140px;
+    max-height: 100%;
+    padding: 20px;
+    outline: none;
+    text-align: start;
+    overflow-y: auto;
+    overflow-x: hidden;
+    list-style-type: none;
+}
+
+.hero .ing::-webkit-scrollbar {
+    width: 0;
+}
+
+.hero .ing:hover::-webkit-scrollbar {
+    width: 3px;
+}
+
+.hero .ing:hover::-webkit-scrollbar-thumb {
+    background-color: #517801;
+    border-radius: 50px;
+}
+
+.hero .ing:hover::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.hero .dir{
+    font-size: 20px;
+    font-weight: 100;
+    border: none;
+    border-radius: 20px;
+    height: 140px;
+    max-height: 100%;
+    padding: 20px;
+    outline: none;
+    text-align: start;
+    overflow-y: auto;
+    overflow-x: hidden;
+    list-style-type: none;
+}
+
+.hero .dir::-webkit-scrollbar {
+    width: 0;
+}
+
+.hero .dir:hover::-webkit-scrollbar {
+    width: 3px;
+}
+
+.hero .dir:hover::-webkit-scrollbar-thumb {
+    background-color: #517801;
+    border-radius: 50px;
+}
+
+.hero .dir:hover::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.hero .button{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.hero .update{
+    background-color: #517801;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 100;
+    color: #F5EFE6;
+}
+
+.hero .update:hover{
+    background-color: #F5EFE6;
+    color: #517801;
+}
+
+.hero .cancel{
+    width: 50px;
+    height: 25px;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.hero .cancel:hover{
+    color: #517801;
+}
+
+.create-overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    color: #fff;
+    text-align: center;
+}
+
+.create-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    background-color: #C9DABF;
+    max-width: 70%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.create-content .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px 20px 30px;
+    justify-content: center;
+    align-items: center;
+    color: #517801;
+}
+
+.update-content .head h1{
+    font-size: 48px;
+    font-weight: 200;
+    color: #517801;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+}
+
+.hero form{
+    padding-left: 0 50px 0 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+}
+
+.hero .name{
+    font-size: 20px;
+    font-weight: 100;
+    border: none;
+    border-radius: 20px;
+    max-height: 35px;
+    padding: 20px;
+    outline: none;
+}
+
+.hero .time{
+    font-size: 16px;
+    font-weight: 100;
+    border: none;
+    border-radius: 20px;
+    width: 30%;
+    padding: 0 20px 0 20px;
+    outline: none;
+}
+
+.hero textarea{
+    resize: none;
+}
+
+.hero .des{
+    font-size: 20px;
+    font-weight: 100;
+    border: none;
+    border-radius: 20px;
+    height: 140px;
+    max-height: 100%;
+    padding: 20px;
+    outline: none;
+    text-align: start;
+    overflow-y: auto;
+    overflow-x: hidden;
+    list-style-type: none;
+}
+
+.hero .des::-webkit-scrollbar {
+    width: 0;
+}
+
+.hero .des:hover::-webkit-scrollbar {
+    width: 3px;
+}
+
+.hero .des:hover::-webkit-scrollbar-thumb {
+    background-color: #517801;
+    border-radius: 50px;
+}
+
+.hero .des:hover::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+
+.hero .ing{
+    font-size: 20px;
+    font-weight: 100;
+    border: none;
+    border-radius: 20px;
+    height: 140px;
+    max-height: 100%;
+    padding: 20px;
+    outline: none;
+    text-align: start;
+    overflow-y: auto;
+    overflow-x: hidden;
+    list-style-type: none;
+}
+
+.hero .ing::-webkit-scrollbar {
+    width: 0;
+}
+
+.hero .ing:hover::-webkit-scrollbar {
+    width: 3px;
+}
+
+.hero .ing:hover::-webkit-scrollbar-thumb {
+    background-color: #517801;
+    border-radius: 50px;
+}
+
+.hero .ing:hover::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.hero .dir{
+    font-size: 20px;
+    font-weight: 100;
+    border: none;
+    border-radius: 20px;
+    height: 140px;
+    max-height: 100%;
+    padding: 20px;
+    outline: none;
+    text-align: start;
+    overflow-y: auto;
+    overflow-x: hidden;
+    list-style-type: none;
+}
+
+.hero .dir::-webkit-scrollbar {
+    width: 0;
+}
+
+.hero .dir:hover::-webkit-scrollbar {
+    width: 3px;
+}
+
+.hero .dir:hover::-webkit-scrollbar-thumb {
+    background-color: #517801;
+    border-radius: 50px;
+}
+
+.hero .dir:hover::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.hero .button{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.hero .create-recipe{
+    background-color: #517801;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 100;
+    color: #F5EFE6;
+}
+
+.hero .create-recipe:hover{
+    background-color: #F5EFE6;
+    color: #517801;
+}
+
+.hero .cancel{
+    width: 50px;
+    height: 25px;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.hero .cancel:hover{
+    color: #517801;
+}
